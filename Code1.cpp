@@ -24,16 +24,14 @@ A(i,j,k)=BA+(i-l1)*(u2-l2+1)(u3-l3+1)C+(j-l2)(u3-l3+1)C+(k-l3)C
 #define u2 4 //Upper Bound 2
 #define l3 1 //Lower Bound 3
 #define u3 5 //Upper Bound 3
-int *BA1, *BA2, *BA3, *p; //Base address of each dimension and moving 
-pointer
+int *BA1, *BA2, *BA3, *p; //Base address of each dimension and moving pointer
 int i,j,k; //subscript of Array 
 void Create1DArray(){ //Create Array 1 dimension
  int element,c,total_mem; //Variable uses 
  element=(u-l+1); //Calculate element
  c=sizeof(*BA1); //Calculate Size each block of Array
  total_mem=element*c; //Calculate Total Size
- BA1=(int*)malloc(total_mem); //Memory allocate and use BA1 point 
-its
+ BA1=(int*)malloc(total_mem); //Memory allocate and use BA1 point its
 } 
 void A1(int i,int x){ //Put data into Array 1 Dimension
  p=BA1+(i-l); //Calculate pointer 
@@ -41,8 +39,7 @@ void A1(int i,int x){ //Put data into Array 1 Dimension
 } 
 int ReadA1(int i) { //Read data from Array 1 Dimension
  p=BA1+(i-l); //Calculate pointer
- return(*p); //Return value in Array 
-28
+ return(*p); //Return value in Array 28
 } 
 //---------------------------------------------------------------------
 void Create2DArray() { 
@@ -89,7 +86,6 @@ int main() {
  A1(i,9);
  printf("\nA1(%d) = %d ",i,ReadA1(i)); 
 //Using 2 Dimension Array ...
-29
  i=2; j=3; 
  A2(i,j,99); 
  printf("\nA2(%d,%d) = %d ",i,j,ReadA2(i,j)); 
