@@ -3,9 +3,7 @@ Program convert infix to postfix by assigned in variable.
 ================================================================================
 */
 #include <stdio.h> //use printf()
-
 #include <conio.h> //use getch()
-
 #include <string.h> //use string function
 
 #define MaxStack 40 //Set Max Operator Stack
