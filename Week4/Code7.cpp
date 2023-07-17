@@ -3,8 +3,7 @@ Program Recursion can..
 1. Calculate Factorial Function
 2. Show each step of recursive result
 3. Show final result
-=======================================================================
-=========
+================================================================================
 */
 #include <stdio.h> //use printf()
 
